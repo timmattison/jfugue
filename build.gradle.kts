@@ -7,6 +7,17 @@ plugins {
     id("maven-publish")
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.timmattison"
+            artifactId = "jfugue"
+
+            from(components["java"])
+        }
+    }
+}
+
 tasks.wrapper {
     gradleVersion = "7.4.1"
     distributionType = Wrapper.DistributionType.ALL
