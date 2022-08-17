@@ -4,6 +4,7 @@ plugins {
     id("java")
     id("idea")
     id("java-library")
+    id("maven-publish")
 }
 
 tasks.wrapper {
