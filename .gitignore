@@ -1,4 +1,5 @@
 .idea
 *.class
 *.jar
+*.zip
 doc
